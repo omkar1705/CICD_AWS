@@ -20,4 +20,4 @@ app.get("/products", (req, res) => {
   ]);
 });
 
-app.listen(port, () => console.log("app is connected"));
+app.listen(port, "0.0.0.0", () => console.log("app is connected"));
