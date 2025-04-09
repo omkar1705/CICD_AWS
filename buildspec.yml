@@ -1,0 +1,18 @@
+# buildspec.yml
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 18
+    commands:
+      - echo "Installing dependencies"
+      - ls -la # Shows us files in the current dir
+      - npm install # This should now find package.json
+  build:
+    commands:
+      - echo "Build phase complete"
+
+artifacts:
+  files:
+    - "**/*"
